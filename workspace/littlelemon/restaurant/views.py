@@ -6,8 +6,8 @@ from .models import Menu, Booking
 from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
-# def index(request):
-#     return render(request, 'index.html', {})
+def index(request):
+    return render(request, 'index.html', {})
 
 class MenuItemsView(generics.ListCreateAPIView):
     queryset = Menu.objects.all()
